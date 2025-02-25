@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CD Collection</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+        <h1>CD Collection</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>               
+                <div>
+                  <label for="title">Title:</label>
+                  <input type="text" id="title" placeholder="Enter CD title" />
+                </div>
+                <div>
+                  <label for="artist">Artist:</label>
+                  <input type="text" id="artist" placeholder="Enter artist" />
+                </div>
+                <div>
+                  <label for="year">Year:</label>
+                  <input type="text" id="year" placeholder="Enter year" />
+                </div>
+                <button id="addCD">Add CD</button>
+              </form>
+            </fieldset>
+        <table>
+          
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Artist</th>
+              <th>Year</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="cdList"></tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 K&oslash;benhavns Erhvervsakedemi Development</p>
+    </footer>
+  </body>
+  <template id="cdTemplate">
+    <tr>
+      <td class="cdTitle"></td>
+      <td class="cdArtist"></td>
+      <td class="cdYear"></td>
+      <td><button class="deleteBtn">Delete</button></td>
+    </tr>
+  </template>
+</html>
